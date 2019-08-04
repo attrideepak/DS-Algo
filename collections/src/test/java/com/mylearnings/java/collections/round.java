@@ -5,7 +5,7 @@ import java.text.DecimalFormat;
 public class round {
 
 	public static void main(String[] args) {
-		double value = round(1.2364,3);
+		double value = round(1.2367,3);
 		System.out.println("*************** " + value);
 		
 		DecimalFormat df = new DecimalFormat("#.###");

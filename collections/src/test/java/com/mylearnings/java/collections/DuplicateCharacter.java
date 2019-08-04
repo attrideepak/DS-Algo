@@ -5,8 +5,8 @@ import java.util.Iterator;
 
 public class DuplicateCharacter {
 	public static void main(String[] args) {
-		duplicateChanracter("dfsghsrtestghstgdffbkfaD");
-		//usingCharArray("gsvdjsdvfhbsvhdsfhbds");
+		//duplicateChanracter("dfsghsrtestghstgdffbkfaD");
+		usingCharArray("gsvdjsdvfhbsvhdsfhbds");
 		
 	}
 	static void duplicateChanracter(String str) {

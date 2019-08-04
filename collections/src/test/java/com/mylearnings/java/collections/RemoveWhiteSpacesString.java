@@ -3,7 +3,7 @@ package com.mylearnings.java.collections;
 public class RemoveWhiteSpacesString {
 	public static void main(String[] args) {
 		//withReplaceAll("sadfsdsg hhg jg jhkuugh  jhbv jh");
-		withoutReplaceAll("hjfhfhgfhgfh hgvhgv hgvh hg hg");
+		withoutReplaceAll("hjfhfhgfhgfh hgvhgv : hgvh hg hg");
 	}
 	static void withReplaceAll(String str) {
 		String newStr = str.replaceAll("\\s", "");

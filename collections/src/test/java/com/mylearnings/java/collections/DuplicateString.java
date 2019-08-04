@@ -34,7 +34,7 @@ public class DuplicateString {
  * 2.Create an empty hash map hm.
  * 3.Iterate over the string array to save each element of the array in the Hashmap.
  * 4.If the array element is not present in the hashmap then put the key and value to hashmap with value as 1
- * 5.If array element is alraedy present in the hashmap then put the key and increase value by 1
+ * 5.If array element is already present in the hashmap then put the key and increase value by 1
  * 6. Iterate over the hashmap to get the keys. 
  */
 

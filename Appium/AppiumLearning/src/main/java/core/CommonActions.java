@@ -14,7 +14,7 @@ public class CommonActions {
     }
 
     public void clickElement(WebElement myElement) {
-       // waitForElementToBeClickable(myElement);
+        waitForElementToBeClickable(myElement);
         try {
             myElement.click();
         } catch (Exception e) {
@@ -23,7 +23,7 @@ public class CommonActions {
     }
 
     public void waitForElementToBeClickable(WebElement myElement) {
-        WebDriverWait wait = new WebDriverWait(localAppiumDriver, 20);
+        WebDriverWait wait = new WebDriverWait(this.localAppiumDriver, 20);
         wait.until(ExpectedConditions.elementToBeClickable(myElement));
     }
 

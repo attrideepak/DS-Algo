@@ -39,7 +39,7 @@ public class StringPermutation {
             String newRemaining = x + y;
                                   
 
-            permutations(newCandidate, newRemaining);
+            permutations(newCandidate, newRemaining);//abc,
         }
     }
     }

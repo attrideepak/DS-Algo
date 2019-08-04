@@ -21,7 +21,7 @@ public class AppiumServerManager {
 		builder.usingAnyFreePort();
 		builder.withStartUpTimeOut(20000, TimeUnit.MILLISECONDS);
 		builder.withArgument(GeneralServerFlag.LOG_LEVEL, "error");
-		builder.withArgument(AndroidServerFlag.BOOTSTRAP_PORT_NUMBER, "200" + new Random().nextInt(50));
+		
 		
 		service = AppiumDriverLocalService.buildService(builder);
 		service.start();

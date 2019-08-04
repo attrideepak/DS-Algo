@@ -22,10 +22,13 @@ public class LinkedList {
 			
 		while(n.next!=null) { //traverse it till we get a null value and add a node after that null
 				n = n.next;
+				//n.next = node; 
 			}
 		n.next = node;  //once we get a null value we will assign the node which we created
 			
 		}
+		
+		
 		
 	/*	
 	 * By taking a head and tail node
@@ -64,6 +67,17 @@ public class LinkedList {
 		head = node;
 		}
 	
+	void printList() 
+	{ 
+	    Node temp = head; 
+	    while (temp != null) 
+	    { 
+	        System.out.print(temp.data + " "); 
+	        temp = temp.next; 
+	    }  
+	    System.out.println(); 
+	}
+	
 	
 	public void insertAt(int index, int data) {
 		Node node = new Node(); 
@@ -100,6 +114,21 @@ public class LinkedList {
 			
 		}
 	}
+	
+	public void addToTheLast(Node node)  
+	{ 
+	    if (head == null) 
+	    { 
+	        head = node; 
+	    } 
+	    else 
+	    { 
+	        Node temp = head; 
+	        while (temp.next != null) 
+	            temp = temp.next; 
+	        temp.next = node; 
+	    } 
+	} 
 	//reversing linked list
 //	public void reverse() { 
 //		Node pointer = head; 
@@ -111,9 +140,7 @@ public class LinkedList {
 //		}
 //	}
 	
-	static {
-		
-	
+	public static void main(String[] args) {
 		LinkedList List = new LinkedList();
 		List.insert(1);
 		List.insert(2);
@@ -121,7 +148,12 @@ public class LinkedList {
 		List.insert(4);
 		List.insert(5);
 		List.show();
+		
+	} 
+		
+	
+		
 
-	}
+	
 
 }

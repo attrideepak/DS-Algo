@@ -129,10 +129,13 @@
                   </a> <!-- homeTest -->
                   <span class="method-name">homeTest</span>
                   <div class="stack-trace">java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at pageobjects.HomePage.clickMenuButton(HomePage.java:44)
+	at java.util.Objects.requireNonNull(Objects.java:203)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:106)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:45)
+	at core.CommonActions.waitForElementToBeClickable(CommonActions.java:26)
+	at core.CommonActions.clickElement(CommonActions.java:17)
+	at pageobjects.HomePage.clickMenuButton(HomePage.java:43)
 	at test.HomePageTest.homeTest(HomePageTest.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -168,7 +171,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/gc/5k2rcgvn511_fh0l5cgg0zt80000gq/T/testng-eclipse--388963440/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/gc/5k2rcgvn511_fh0l5cgg0zt80000gq/T/testng-eclipse--218804096/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -259,13 +262,13 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">10631 ms</span>
+                <span class="method-start">9981 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">homeTest</span>
-                <span class="method-start">21538 ms</span>
+                <span class="method-start">19398 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

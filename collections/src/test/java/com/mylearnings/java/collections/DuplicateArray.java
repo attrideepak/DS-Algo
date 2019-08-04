@@ -4,13 +4,14 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 
-//java program to find duplicate elements in an array, using hashset
+
 public class DuplicateArray {
 	public static void main(String[] args) {
 		String[] strArray = {"Java", "JSP", "Servlets", "Java", "Struts", "JSP", "JDBC"};
 		duplicateElement(strArray);
 		duplicateElementAgain(strArray);
 	}
+	 //java program to find duplicate elements in an array, using hashset
 		static void duplicateElement(String[] array) {
 		HashSet<String> set = new HashSet<String>();
 		for(String arrayElement:array) {

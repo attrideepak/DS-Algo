@@ -1,0 +1,46 @@
+For a given number, find the next immediate palindrome larger than the number. 
+For example if the number is 103 the immediate palindrome will be 111. 
+
+One approach would be to keep on incrementing the number and after each increment check if the number 
+is a palindrome. But suppose the number is 99990000 then the next palindrome will be 99999999, 
+so 9999 iterations will have to be made. However this approach is crude and having more complexity.
+
+More nuanced approach for finding Palindrome- In this approach that we will follow there are two cases-
+The length of the number is odd
+The length of the number is even
+
+The length of the number is odd
+
+1.Suppose the number is PQRST. We find the middle number i.e. R. Then discard the numbers after R 
+  and replace them with the numbers before R in reverse order. For example if number is 45312,
+ then the middle number is 3. Discard the numbers after 3 and replace then with numbers before 3 in 
+ reverse order. So the number will be 45354, which is a palindrome and number is greater than the 
+ original number 45312.
+ 
+ 2.Now suppose the number is 12345. After following the above steps we get the number 12321 which 
+ is a palindrome but this number is smaller than 12345. In such a scenario we increment the middle 
+ value by 1. So the new palindrome will be 12421 which is greater than 12345.
+ 
+ 3.Now consider the number 12945. After following steps in first point above we get the number as 12921. 
+ This number is smaller than original number 12945. In this scenario we cant increment only the middle 
+ number since it is 9. We should increment the entire number till the middle number by 1. 
+ So increment the number 129 by 1 we get 13045 as the number. Now we find the palindrome for this 
+ number using step 1 . So we get the palindrome as 13031 which is greater than original palindrome 12945.
+ 
+ The length of the number is even
+ 
+ 1.Suppose the number is PQRS. We find the middle numbers i.e. QR. Then discard the numbers after Q 
+ and replace them with the numbers before Q in reverse order including repeating Q again. 
+ So the palindrome will be PQQP For example if number is 4531, then the middle number is 53. 
+ Discard the numbers after 5 and replace then with numbers before 5 in reverse order including 5 again. 
+ So the number will be 4554 , which is a palindrome and number is greater than the original number 4531.
+ 
+ 2.Now suppose the number is 1459. After following the above steps we get the number 1441 which 
+ is a palindrome but this number is smaller than 1459. In such a scenario we increment the middle 
+ elements value by 1 each. So the new palindrome will be 1551 which is greater than 1459.
+ 
+ 3.Now consider the number 1997. After following steps in first point above we get the number as 1991. 
+ This number is smaller than original number 1997. In this scenario we cant increment only the middle
+  elements since it is 99. We should increment the entire number till the middle elements by 1. 
+  So increment the number 199 by 1 we get 2001 as the number. Now we find the palindrome for this 
+  number using step 1 . So we get the palindrome as 2002 which is greater than original palindrome 1997.

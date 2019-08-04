@@ -39,8 +39,8 @@ public class Palindrome {
 	}
 	
 	public static void main(String[] args) {
-		checkPalindromebyReversing("radar");
-		checkPalindromebyReversing("121");
+		//checkPalindromebyReversing("radar");
+		//checkPalindromebyReversing("121");
 		int n = 121;
 		checkPalindromebyReversingInteger(n);
 	}

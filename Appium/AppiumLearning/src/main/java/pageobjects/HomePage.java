@@ -40,7 +40,7 @@ public class HomePage {
     private WebElement menuButton;
     
     public void clickMenuButton() {
-       // commonActions.clickElement(menuButton);
-    	menuButton.click();
+    commonActions.clickElement(menuButton);
+    	//menuButton.click();
     }
 }
