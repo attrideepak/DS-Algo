@@ -1,6 +1,5 @@
 package com.mylearnings.java.collections;
 
-import java.util.Arrays;
 //Good problem
 //Java program to find the smallest positive value that cannot be 
 //represented as sum of subsets of a given sorted array 

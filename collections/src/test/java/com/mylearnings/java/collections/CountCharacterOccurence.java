@@ -1,6 +1,5 @@
 package com.mylearnings.java.collections;
 
-import java.util.ArrayList;
 
 /*
  * Given a string, return the character that appears the maximum number of times in the string. 

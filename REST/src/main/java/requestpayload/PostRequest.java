@@ -1,7 +1,6 @@
 package requestpayload;
 
 import org.json.JSONObject;
-import org.json.JSONString;
 
 public class PostRequest {
 

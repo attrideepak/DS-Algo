@@ -23,11 +23,9 @@ public class HackerRankBirthdatChocolate {
 	//m = length = 2
 	//d = sum= 3
 	static int birthday(List<Integer> s, int d, int m) {
-        int startingIndex = 0;
         int result = 0;
         int sumDate = 0;
         for(int i = 0; i< (s.size()-(m-1)); i++) {
-            startingIndex = i;
             for(int j = 0; j<m;j++) {
                 sumDate = sumDate + s.get(i+j);
             }

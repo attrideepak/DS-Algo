@@ -1,13 +1,15 @@
 package com.mylearnings.java.collections;
 
+
 public class RecursionDemo {
 
 	public static void main(String[] args) {
 		//reduceByOne(10);
 		//System.out.println(factorial(5));
-		for(int i=1;i<=100;i++) 
+		//for(int i=1;i<=100;i++) 
 		//System.out.print(fib(i) + " ");
-		System.out.println(factorial(i));
+		//System.out.println(factorial(i));
+		fibonacci(9);
 
 
 	}
@@ -33,6 +35,21 @@ public class RecursionDemo {
 			//System.out.print(fib(n-1)+fib(n-2));
 			return fib(n-1)+fib(n-2);
 		}
+		
+	}
+	
+	public static void fibonacci(int n) {
+		int a = 0;
+		int b = 0;
+		int c = 1;
+		
+		for(int i = 1; i <= n; i++)
+        {
+            a = b;
+            b = c;
+            c = a + b;
+            System.out.print(a+" ");
+        }
 		
 	}
 	

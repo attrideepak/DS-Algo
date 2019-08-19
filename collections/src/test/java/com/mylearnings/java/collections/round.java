@@ -5,7 +5,7 @@ import java.text.DecimalFormat;
 public class round {
 
 	public static void main(String[] args) {
-		double value = round(1.2367,3);
+		double value = roundNumber(1.2367,3);
 		System.out.println("*************** " + value);
 		
 		DecimalFormat df = new DecimalFormat("#.###");
@@ -24,12 +24,12 @@ public class round {
 	    System.out.println("******************** round test 1 " +Math.round(123.56));
 	    System.out.println("******************** round test 2 " +Math.round(123.44));
 	    System.out.println("******************** round test 3 " +Math.round(123.65));
-	    System.out.println(0.0 == 0.0);
+	   
 	    
 	    
 
 	}
-	private static double round (double value, int precision) {
+	private static double roundNumber (double value, int precision) {
 	    int scale = (int) Math.pow(10, precision);
 	    return (double) Math.round(value * scale) / scale;
 	}

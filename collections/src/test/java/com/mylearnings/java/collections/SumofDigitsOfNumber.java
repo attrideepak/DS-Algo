@@ -19,7 +19,7 @@ public class SumofDigitsOfNumber {
 	
 	public static void main(String[] args) {
 		SumofDigitsOfNumber digitsSum = new SumofDigitsOfNumber();
-		digitsSum.digitSum(9);
+		digitsSum.digitSum(19);
 	}
 	
 }

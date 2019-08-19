@@ -1,6 +1,5 @@
 package com.mylearnings.java.collections;
 
-import java.util.Arrays;
 import java.util.HashSet;
 
 public class FirstRepeatingWordInASentence {
@@ -8,8 +7,8 @@ public class FirstRepeatingWordInASentence {
 	public static void main(String[] args) {
 		String str = "      Has Raju, Kaju has has: today. tommmorow;              ice-cream Raju   ";
 	//	String newString = str.replaceAll(" ", "");
-	    //String[] strings = str.trim().split("[\\W]+");
-		String[] strings = str.trim().split("[,;:.-]");
+	    String[] strings = str.trim().split("[\\W]+");
+		//String[] strings = str.trim().split("[,;:.-]");
 		for(int i = 0;i<strings.length;i++) {
 			System.out.println(i+":"+strings[i]);
 		}

@@ -26,6 +26,5 @@ public class ErrorPojo {
         this.message = message;
     }
     
-    
-
+ 
 }

@@ -1,16 +1,10 @@
 package API.REST;
 
-import static org.testng.Assert.assertNotEqualsDeep;
-
-import org.json.JSONObject;
 import org.testng.annotations.Test;
 
 import com.google.gson.Gson;
 
 import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
-import io.restassured.internal.mapping.GsonMapper;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import pojo.ErrorPojo;
@@ -42,7 +36,7 @@ public class PostRequestTest{
 	   Response response = request.post("/cargroups");
 
 	   
-	   int statusCode = response.getStatusCode();
+	   
 	   	   
 //	   System.out.println("Response body is " + response.getBody().asString());
 //

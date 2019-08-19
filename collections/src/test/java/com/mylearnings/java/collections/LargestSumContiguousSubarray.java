@@ -1,6 +1,4 @@
 package com.mylearnings.java.collections;
-import java.io.*;
-
 
 public class LargestSumContiguousSubarray {
 	// Java program to print largest contiguous 
@@ -9,7 +7,7 @@ public class LargestSumContiguousSubarray {
 	  
 	    static int maxSubArraySum(int a[], int size) 
 	    { 
-	    	//int a[] = {-2, -3, 4, -1, -2, 1, 5, -3};      
+	    	// a[] = {-2, -3, 4, -1, -2, 1, 5, -3};      
 	    	/*
 	    	 * i = 1, cur_max = max(-3,-5)=-3, max_so_far = max(-2,-3) = -2
 	    	 * i = 2, cur_max = max(4,1) = 4, max_so_far = max(-2,4) = 4, start = 2, end = 2
@@ -45,7 +43,6 @@ public class LargestSumContiguousSubarray {
 		   int curr_max = 0;
 		   int start = 0;
 		   int end = 0;
-		   int s = 0;
 		   for(int i = 0 ; i<a.length;i++) {
 			   curr_max = curr_max + a[i];
 			   if(curr_max<0) {

@@ -16,7 +16,6 @@ public class LargestIncreasingSubArray {
     	
     int max_so_far = 0; 
     int start = 0;
-    int end = 0;
     for(int i =0; i<a.length;i++) {
     int cur_sum = a[i];
     while(i+1<a.length && a[i+1]>a[i]) {
