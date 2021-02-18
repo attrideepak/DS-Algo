@@ -21,12 +21,12 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-    
+
     <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
 <dependency>
     <groupId>io.appium</groupId>
     <artifactId>java-client</artifactId>
-    <version>7.0.0</version>
+    <version>7.4.1</version>
 </dependency>
     
     <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -40,7 +40,7 @@
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
-    <version>6.14.3</version>
+    <version>7.3.0</version>
     <scope>test</scope>
 </dependency>
 
@@ -48,7 +48,7 @@
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-remote-driver</artifactId>
-    <version>3.14.0</version>
+    <version>3.141.59</version>
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/log4j/log4j -->
@@ -57,8 +57,13 @@
     <artifactId>log4j</artifactId>
     <version>1.2.17</version>
 </dependency>
+      <dependency>
+          <groupId>org.testng</groupId>
+          <artifactId>testng</artifactId>
+          <version>7.3.0</version>
+          <scope>compile</scope>
+      </dependency>
 
 
-    
   </dependencies>
 </project>

@@ -5,11 +5,11 @@ import java.io.File;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.Test;
-import org.testng.log4testng.Logger;
+
+
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
@@ -24,8 +24,7 @@ public class CreateAndroidDriver {
 	    AppiumDriver appiumDriver;
 	    AppiumServerManager appiumServerManager = new AppiumServerManager();
 	    private static Logger logger = Logger.getLogger(CreateAndroidDriver.class);
-	    
-	   
+
 	    public AppiumDriver getAndroidDriver() {	
 	    logger.info("Creating android driver");	
 		String path = System.getProperty("user.dir") + "/src/main/resources/app-debug.apk";
@@ -41,8 +40,7 @@ public class CreateAndroidDriver {
 		capabilities.setCapability("appActivity", "com.zoomcar.activity.SplashActivity");
 		capabilities.setCapability("appPackage","com.zoomcar.debug");
 	
-		
-		
+
 		try {
 		URL url = appiumServerManager.startAppiumServer();
 		appiumDriver = new AndroidDriver(url, capabilities);	
