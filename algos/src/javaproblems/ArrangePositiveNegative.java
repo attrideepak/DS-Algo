@@ -9,8 +9,7 @@ public class ArrangePositiveNegative {
 		int arr[] = { -1, 2, -3, 4, -5, 6, -7, 8, 9 }; 
 		rearrange(arr);
 		//rearrangePositiveNegative(arr);
-		 for (int i = 0; i < arr.length; i++) 
-	            System.out.print(arr[i] + " ");
+		for (int value : arr) System.out.print(value + " ");
 
 	}
 		
