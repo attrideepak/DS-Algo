@@ -37,7 +37,7 @@ public class LargestSumContiguousSubarray {
 	    return max_so_far; 
 	    } 
 	    
-	    
+	    //Kadane algo
 	   static int largestSumContigousArray(int a[]) {
 		   int max_so_far = 0;
 		   int curr_max = 0;
