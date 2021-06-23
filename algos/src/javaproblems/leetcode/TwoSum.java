@@ -1,6 +1,7 @@
 package javaproblems.leetcode;
 
 //https://leetcode.com/problems/two-sum/
+//https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 //[2,7,11,15],9
 
 import java.util.*;
@@ -34,6 +35,7 @@ public class TwoSum {
     }
 
     //return index
+
     static int[] findSum(int arr[],int target){
         Map<Integer,Integer>deltaMap = new HashMap<>();
         for(int i = 0; i<arr.length; i++){
@@ -42,6 +44,21 @@ public class TwoSum {
                 return new int[] {deltaMap.get(delta),i};
             }else {
                 deltaMap.put(arr[i],i);
+            }
+        }
+        return new int[] {-1,-1};
+    }
+
+    public int[] twoSum(int[] numbers, int target) {
+        int start = 0;
+        int end = numbers.length-1;
+        while(start<=end){
+            if(numbers[start]+numbers[end]==target){
+                return new int[] {start+1,end+1};
+            }else if(numbers[start]+numbers[end]>target){
+                end--;
+            }else{
+                start++;
             }
         }
         return new int[] {-1,-1};

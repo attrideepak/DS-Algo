@@ -1,4 +1,4 @@
-package javaproblems.dp.knapsack;
+package javaproblems.dp.zerooneknapsack;
 //https://www.youtube.com/watch?v=ot_XBHyqpFc&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=12
 //https://www.youtube.com/watch?v=Hw6Ygp3JBYw&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=12
 //https://leetcode.com/problems/target-sum/

@@ -1,4 +1,4 @@
-package javaproblems.leetcode;
+package javaproblems.binarysearch;
 //https://leetcode.com/problems/find-peak-element/
 public class PeakElement {
 

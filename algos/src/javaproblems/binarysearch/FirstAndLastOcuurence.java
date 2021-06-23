@@ -1,4 +1,4 @@
-package javaproblems.leetcode;
+package javaproblems.binarysearch;
 
 //Java program to find first and last occurrence of an elements in given sorted array
 //https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/

@@ -17,7 +17,7 @@ public class ZeroSumArray {
         // a) Current element is 0 
         // b) sum of elements from 0 to i is 0 
         // c) sum is already present in hash map 
-        if (arr[i] == 0 || sum == 0 || hM.get(sum) != null)   
+        if (arr[i] == 0 || sum == 0 || hM.get(sum) != null)
         	 
             return true; 
 
@@ -29,12 +29,7 @@ public class ZeroSumArray {
  // We reach here only when there is 
     // no subarray with 0 sum 
     
-    return false; 
-   // for (Map.Entry<String,String> entry : gfg.entrySet())  
-        //System.out.println("Key = " + entry.getKey() + 
-       //                  ", Value = " + entry.getValue()); 
-    
-    	
+    return false;
 }
 	public static void main(String arg[]) 
     { 

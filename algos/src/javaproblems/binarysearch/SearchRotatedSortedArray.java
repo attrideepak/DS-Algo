@@ -1,4 +1,4 @@
-package javaproblems.leetcode;
+package javaproblems.binarysearch;
 //https://leetcode.com/problems/search-in-rotated-sorted-array/submissions/
 public class SearchRotatedSortedArray {
     public int search(int[] nums, int target) {

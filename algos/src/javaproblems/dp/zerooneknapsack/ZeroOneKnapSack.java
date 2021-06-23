@@ -1,4 +1,4 @@
-package javaproblems.dp.knapsack;
+package javaproblems.dp.zerooneknapsack;
 
 public class ZeroOneKnapSack {
 

@@ -1,4 +1,4 @@
-package javaproblems.leetcode;
+package javaproblems.binarysearch;
 //https://www.geeksforgeeks.org/allocate-minimum-number-pages/
 //https://leetcode.com/problems/split-array-largest-sum/submissions/
 //https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/submissions/

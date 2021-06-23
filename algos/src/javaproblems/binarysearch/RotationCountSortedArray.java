@@ -1,4 +1,4 @@
-package javaproblems.leetcode;
+package javaproblems.binarysearch;
 
 //Find the Rotation Count in Rotated Sorted array
 /*
