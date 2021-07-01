@@ -1,5 +1,6 @@
 package javaproblems.leetcode;
 //https://leetcode.com/problems/maximum-average-subarray-i/submissions/
+//sliding window
 public class FindMaxAverage {
     public static double findMaxAverage(int[] nums, int k) {
 
