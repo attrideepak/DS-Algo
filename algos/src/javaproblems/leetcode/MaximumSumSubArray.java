@@ -1,6 +1,7 @@
 package javaproblems.leetcode;
+//Good problem
 //https://leetcode.com/problems/maximum-subarray/
-
+//https://www.youtube.com/watch?v=HCL4_bOd3-4
 public class MaximumSumSubArray {
 
     public static int maxSum(int arr[]){

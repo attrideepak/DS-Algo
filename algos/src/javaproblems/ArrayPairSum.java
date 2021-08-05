@@ -1,6 +1,6 @@
 package javaproblems;
 
-import java.util.Arrays;
+import java.util.*;
 
 //How to Find all Pairs in Array of Integers Whose sum is Equal to a Given Number?
 
@@ -17,6 +17,24 @@ public class ArrayPairSum {
 				}
 			}
 		}
+	}
+
+	public static void pairsumMap(int[] arr, int sum){
+		Set<Integer> hSet = new HashSet<>();
+		for(int i = 0; i<arr.length; i++){
+			hSet.add(arr[i]);
+		}
+
+		for(int i = 0; i<arr.length;i++){
+			int rem = sum-arr[i];
+			if(hSet.contains(rem)){
+				int[] pair = {arr[i], rem};
+				System.out.println(Arrays.toString(pair));
+				hSet.remove(arr[i]);  //to remove duplicate pairs like 1,2 and 2,1
+			}
+
+		}
+
 	}
 	
 	public static void main(String[] args) {

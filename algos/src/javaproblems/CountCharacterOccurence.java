@@ -15,6 +15,7 @@ public class CountCharacterOccurence {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		countC("daasa");
+		countChar("daasa",'a');
 	}
 	
 	static int countCharacter(String str) {
@@ -59,6 +60,13 @@ public class CountCharacterOccurence {
 	        } 
 	       System.out.println(result);
 	        return result;
+	}
+
+
+	static int countChar(String str, char ch){
+		long count = str.chars().filter(e->(char)e==ch).count();
+		System.out.println(count);
+		return (int)count;
 	}
 }
 

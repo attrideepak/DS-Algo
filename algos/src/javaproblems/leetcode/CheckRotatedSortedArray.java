@@ -7,7 +7,7 @@ public class CheckRotatedSortedArray {
         for(int i = 0; i < nums.length; i++){
 
             //check kiya ki kya pichli value agli se badi hai
-            if(nums[i] > nums[(i + 1) % nums.length])   // or nums[i]>nums[i+1]  and add another conditions if if(nums[0]<nums[nums.length-1]) return false
+            if(nums[i] > nums[(i + 1) % nums.length])   // or nums[i]>nums[i+1]  and add another conditions if(nums[0]<nums[nums.length-1]) return false
                 count++;
         }
 

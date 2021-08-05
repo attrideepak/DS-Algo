@@ -1,5 +1,5 @@
 package javaproblems.leetcode;
-
+//leetcode.com/problems/shuffle-the-array/
 public class ShuffleTheArray {
     public int[] shuffle(int nums[], int n){
         int arr[] = new int[nums.length];

@@ -1,4 +1,5 @@
 package javaproblems.leetcode;
+//Good Problem
 //https://leetcode.com/problems/sum-of-all-odd-length-subarrays/
 public class SumOfOddSubArrays {
     public static int sumOddLengthSubarrays(int[] arr) {

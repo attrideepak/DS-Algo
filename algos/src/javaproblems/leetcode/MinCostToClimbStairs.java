@@ -1,5 +1,7 @@
 package javaproblems.leetcode;
-
+//Good Problem
+//https://leetcode.com/problems/min-cost-climbing-stairs/
+//[10,15,20] => 15
 public class MinCostToClimbStairs {
     public static int minCostClimbingStairs(int[] cost)
     {

@@ -1,5 +1,6 @@
 package javaproblems.leetcode;
-
+//Good Problem
+//https://leetcode.com/problems/find-common-characters/
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

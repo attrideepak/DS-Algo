@@ -1,5 +1,7 @@
 package javaproblems.leetcode;
+//Good Problem
 //https://leetcode.com/problems/kth-missing-positive-number/
+//[2,3,4,7,11], k = 5 => 9   , [1,5,6,8,9,10,12,13,...]
 public class kthPositive {
     public int findKthPositive(int[] arr, int k) {
         int count=0,next=1;

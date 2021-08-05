@@ -2,6 +2,7 @@ package javaproblems.binarysearch;
 
 //Java program to find first and last occurrence of an elements in given sorted array
 //https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+//https://www.youtube.com/watch?v=zr_AoTxzn0Y&t=445s
 public class FirstAndLastOcuurence {
 
     //time complexity O()N
