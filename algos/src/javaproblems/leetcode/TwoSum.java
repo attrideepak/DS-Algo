@@ -30,7 +30,7 @@ public class TwoSum {
            // break;
         }
     }
-        System.out.println(finalList.toString());
+        System.out.println(finalList);
     return finalList;
     }
 

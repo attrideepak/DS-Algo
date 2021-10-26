@@ -23,4 +23,5 @@ public class ArrayRankTransform {
         System.out.println(Arrays.toString(rank));
         return rank;
     }
+
 }

@@ -1,4 +1,4 @@
-package javaproblems;
+package javaproblems.linkedlist;
 
 public class LinkedListQueue{
 	 Node front;   //the point from where we dequeue/remove or head node

@@ -1,4 +1,4 @@
-package javaproblems;
+package javaproblems.linkedlist;
 
 public class LinkedListStack {
 	Node head;
